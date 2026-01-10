@@ -1,6 +1,6 @@
 :- use_module(library(plunit)).
-:- consult('../src/task1_family.pl').
-:- consult('../src/task2_lists.pl').
+:- consult('../../src/task1_family.pl').
+:- consult('../../src/task2_lists.pl').
 
 :- begin_tests(family).
 test(father) :- father(tom, mary).
