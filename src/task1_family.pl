@@ -2,19 +2,20 @@
 % Define facts for a family and implement relationship rules.
 
 % Facts: parent(Parent, Child)
-parent(tom, mary).
-parent(tom, james).
-parent(mary, ann).
-parent(mary, pat).
-parent(pat, jim).
+parent(daniel, anna).
+parent(daniel, justin).
+parent(anna, debra).
+parent(anna, jeffrey).
+parent(david, john).
 
 % Facts: male/female
-male(tom).
-male(james).
-male(pat).
-male(jim).
-female(mary).
-female(ann).
+male(daniel).
+male(justin).
+male(jeffrey).
+male(david).
+male(john).
+female(anna).
+female(debra).
 
 % YOUR TASK: Implement these rules
 
@@ -34,7 +35,7 @@ female(ann).
 % ancestor(X, Y) :- YOUR CODE HERE
 
 % Test queries:
-% ?- father(tom, mary).  % true
-% ?- grandparent(tom, ann).  % true
-% ?- sibling(mary, james).  % true
-% ?- ancestor(tom, jim).  % true
+% ?- father(daniel, anna).  % true
+% ?- grandparent(daniel, debra).  % true
+% ?- sibling(anna, justin).  % true
+% ?- ancestor(daniel, john).  % true
