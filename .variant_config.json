@@ -1,0 +1,125 @@
+{
+  "student_id": "programming",
+  "variant_seed": 3663085943,
+  "family_tree": {
+    "grandparent": "daniel",
+    "parent1": "anna",
+    "parent2": "justin",
+    "child1": "debra",
+    "child2": "jeffrey",
+    "child3": "david",
+    "grandchild": "john",
+    "males": [
+      "daniel",
+      "justin",
+      "jeffrey",
+      "david",
+      "john"
+    ],
+    "females": [
+      "anna",
+      "debra"
+    ],
+    "parent_facts": [
+      [
+        "daniel",
+        "anna"
+      ],
+      [
+        "daniel",
+        "justin"
+      ],
+      [
+        "anna",
+        "debra"
+      ],
+      [
+        "anna",
+        "jeffrey"
+      ],
+      [
+        "david",
+        "john"
+      ]
+    ]
+  },
+  "family_tests": {
+    "father_test": [
+      "daniel",
+      "anna"
+    ],
+    "grandparent_test": [
+      "daniel",
+      "debra"
+    ],
+    "sibling_test": [
+      "anna",
+      "justin"
+    ],
+    "ancestor_direct": [
+      "daniel",
+      "anna"
+    ],
+    "ancestor_indirect": [
+      "daniel",
+      "john"
+    ]
+  },
+  "list_tests": {
+    "append": {
+      "list1": [
+        2,
+        7,
+        16,
+        13
+      ],
+      "list2": [
+        32,
+        23
+      ],
+      "result": [
+        2,
+        7,
+        16,
+        13,
+        32,
+        23
+      ]
+    },
+    "reverse": {
+      "input": [
+        38,
+        45,
+        13,
+        10,
+        42
+      ],
+      "result": [
+        42,
+        10,
+        13,
+        45,
+        38
+      ]
+    },
+    "member": {
+      "element": 17,
+      "list": [
+        8,
+        24,
+        30,
+        17
+      ]
+    },
+    "length": {
+      "list": [
+        "h",
+        "f",
+        "b",
+        "d",
+        "e"
+      ],
+      "result": 5
+    }
+  }
+}
