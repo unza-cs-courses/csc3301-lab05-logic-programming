@@ -19,10 +19,77 @@ This assignment uses a **variant-based assessment system**. When you accept this
 
 **Important:** Always refer to your `ASSIGNMENT.md` file for your specific test cases.
 
-## Prerequisites
+## Environment Setup
 
-- SWI-Prolog installed: `sudo apt install swi-prolog` or download from swi-prolog.org
-- Verify: `swipl --version`
+### Installing SWI-Prolog
+
+#### macOS
+```bash
+brew install swi-prolog
+```
+
+#### Ubuntu/Debian
+```bash
+sudo apt install swi-prolog
+```
+
+#### Windows
+Download the installer from [swi-prolog.org](https://www.swi-prolog.org/download/stable) and follow the installation wizard.
+
+### Verify Installation
+
+```bash
+swipl --version
+```
+
+You should see output like: `SWI-Prolog version 9.x.x`
+
+### Running Tests
+
+Run all visible tests:
+```bash
+swipl -g "run_tests" -t halt tests/visible/test_lab5.pl
+```
+
+### Interactive Development
+
+Start the SWI-Prolog interactive shell:
+```bash
+swipl
+```
+
+Then load your code:
+```prolog
+?- consult('src/task1_family.pl').
+?- consult('src/task2_lists.pl').
+```
+
+### Debugging Tips
+
+#### Enable Tracing
+Step through your predicates to debug execution:
+```prolog
+?- trace.
+?- father(X, Y).
+?- notrace.
+```
+
+#### List Predicate Definitions
+View all clauses of a predicate:
+```prolog
+?- listing(ancestor/2).
+?- listing(my_append/3).
+```
+
+#### Common Prolog Errors
+
+| Error | Cause | Solution |
+|-------|-------|----------|
+| `Undefined procedure` | Predicate not defined or wrong arity | Check predicate name and number of arguments |
+| `Instantiation error` | Variable should be instantiated | Ensure variables are bound before use |
+| `Syntax error` | Typo or missing punctuation | Check parentheses, periods, and commas |
+| `False` | Query fails | Use `trace` to debug the execution path |
+| `Infinite loop` | Infinite recursion without base case | Add a base case to prevent infinite backtracking |
 
 ## Repository Structure
 
