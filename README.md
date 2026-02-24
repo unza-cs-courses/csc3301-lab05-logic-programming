@@ -97,7 +97,6 @@ View all clauses of a predicate:
 .
 ├── .github/
 │   └── workflows/
-│       ├── autograding.yml      # Runs tests on push
 │       └── generate-variant.yml # Generates your unique variant
 ├── scripts/
 │   ├── variant_generator.py     # Generates variant config
@@ -139,6 +138,8 @@ Implement `eval/2` to evaluate arithmetic expressions represented as Prolog term
 
 ## Running Tests
 
+> **Note:** Testing is local-only. There is no automatic test feedback on push. You must run the tests yourself before submitting.
+
 ```bash
 # Run all visible tests
 swipl -g "run_tests" -t halt tests/visible/test_lab5.pl
@@ -152,9 +153,8 @@ swipl
 ## Submission
 
 1. Complete all tasks in the `src/` directory
-2. Ensure all visible tests pass locally
-3. Push your changes to trigger autograding
-4. Check the Actions tab for test results
+2. Run all visible tests locally and ensure they pass
+3. Commit and push your changes before the deadline
 
 ## Grading
 
