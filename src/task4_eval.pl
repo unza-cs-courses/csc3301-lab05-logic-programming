@@ -30,14 +30,12 @@
 % 2. Recursive cases: Evaluate subexpressions, then apply the operator
 %
 
-% Base case: A number evaluates to itself
+% Base case: A number evaluates to itself (provided as a starting point)
 eval_expr(num(N), N).
 
 % TODO: Add case for addition
 % eval_expr(add(E1, E2), Value) :-
-%     eval_expr(E1, V1),
-%     eval_expr(E2, V2),
-%     Value is V1 + V2.
+%     ...
 
 % TODO: Add case for subtraction
 % eval_expr(sub(E1, E2), Value) :-

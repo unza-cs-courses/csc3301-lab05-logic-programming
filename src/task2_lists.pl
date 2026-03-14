@@ -2,24 +2,31 @@
 % Implement these WITHOUT using built-in predicates.
 
 % my_append(L1, L2, L3) - L3 is L1 concatenated with L2
-my_append([], L, L).
-my_append([H|T], L, [H|R]) :- my_append(T, L, R).
+% Hint: Base case - appending to an empty list. Recursive case - move head across.
+% TODO: Implement my_append/3
+my_append(_, _, _) :- fail.
 
 % my_reverse(List, Reversed) - use accumulator for O(n)
-% TODO: Implement my_reverse/2 with accumulator pattern
-my_reverse(L, R) :- my_reverse_acc(L, [], R).
-my_reverse_acc([], Acc, Acc).
-my_reverse_acc([H|T], Acc, R) :- my_reverse_acc(T, [H|Acc], R).
+% Hint: Use my_reverse_acc/3 with an initially empty accumulator.
+% TODO: Implement my_reverse/2
+my_reverse(_, _) :- fail.
+
+% my_reverse_acc(List, Accumulator, Reversed) - helper with accumulator
+% Hint: Move elements from List onto Accumulator one at a time.
+% TODO: Implement my_reverse_acc/3
+my_reverse_acc(_, _, _) :- fail.
 
 % my_member(X, List) - X is a member of List
-my_member(X, [X|_]).
-my_member(X, [_|T]) :- my_member(X, T).
+% Hint: X is a member if it's the head, or if it's in the tail.
+% TODO: Implement my_member/2
+my_member(_, _) :- fail.
 
 % my_length(List, N) - N is the length of List
-my_length([], 0).
-my_length([_|T], N) :- my_length(T, N1), N is N1 + 1.
+% Hint: Base case for empty list, recurse on tail and add 1.
+% TODO: Implement my_length/2
+my_length(_, _) :- fail.
 
 % my_nth(N, List, Element) - Element is the Nth element of List (0-indexed)
+% Hint: Base case when N=0 (take head). Recurse with N-1 on tail.
 % TODO: Implement my_nth/3
-my_nth(0, [H|_], H).
-my_nth(N, [_|T], E) :- N > 0, N1 is N - 1, my_nth(N1, T, E).
+my_nth(_, _, _) :- fail.
