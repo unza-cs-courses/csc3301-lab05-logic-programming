@@ -7,11 +7,11 @@ test(father) :- father(daniel, anna).
 test(grandparent) :- grandparent(daniel, debra).
 test(sibling) :- sibling(anna, justin).
 test(ancestor_direct) :- ancestor(daniel, anna).
-test(ancestor_indirect) :- ancestor(daniel, john).
+test(ancestor_indirect) :- ancestor(daniel, debra).
 test(father_basic_fact_1) :- father(daniel, anna).
 test(father_basic_fact_2) :- father(daniel, justin).
 test(mother_basic_fact) :- mother(anna, debra).
-test(parent_rule) :- parent(daniel, anna).
+test(mother_alternate) :- mother(anna, jeffrey).
 test(grandparent_recursive) :- grandparent(daniel, debra).
 :- end_tests(family).
 
